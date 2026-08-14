@@ -249,7 +249,7 @@ fun CenterKeypad(
                 }
             )
             CalculatorButton(
-                text = remember { DecimalFormatSymbols.getInstance().decimalSeparator.toString() },
+                text = ".",
                 onClick = {
                     onEvent(CalculatorEvent.Decimal)
                 }
@@ -458,7 +458,7 @@ fun CenterKeypadHorizontal(
                 textStyle = textStyle
             )
             CalculatorButton(
-                text = remember { DecimalFormatSymbols.getInstance().decimalSeparator.toString() },
+                text = ".",
                 square = false,
                 onClick = {
                     onEvent(CalculatorEvent.Decimal)
