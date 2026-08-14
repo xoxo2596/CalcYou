@@ -10,6 +10,7 @@ class Tokenizer(context: Context) {
 
     init {
         var locale: Locale = context.resources.configuration.locale
+        symbols.decimalSeparator = '.'
         locale = Locale.Builder()
             .setLocale(locale)
             .setUnicodeLocaleKeyword("nu", "latn")
