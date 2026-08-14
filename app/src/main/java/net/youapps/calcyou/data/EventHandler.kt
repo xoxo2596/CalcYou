@@ -16,7 +16,7 @@ class EventHandler(
 ) {
     private val tokenizer = Tokenizer(context)
     private val evaluator = FormattingEvaluator(tokenizer)
-    private val numberFormat = DecimalFormatSymbols.getInstance()
+    private val numberFormat = DecimalFormatSymbols.getInstance().apply { decimalSeparator = ',' }
 
     fun processEvent(
         event: CalculatorEvent,
